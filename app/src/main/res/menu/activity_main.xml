@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item1"
+        android:title="@string/menu_connect_bluetooth">
+    </item>
+    <item
+        android:id="@+id/item2"
+        android:title="@string/menu_connect_bluetoothLE">
+    </item>
+    <item
+        android:id="@+id/item3"
+        android:title="@string/menu_connect_wifi">
+    </item>
+    <item
+        android:id="@+id/item4"
+        android:title="@string/menu_connect_wifi_direct">
+    </item>
+    <item
+        android:id="@+id/item5"
+        android:title="@string/menu_connect_usb">
+    </item>
+    <item
+        android:id="@+id/item6"
+        android:title="@string/menu_disconnect">
+    </item>
+
+</menu>

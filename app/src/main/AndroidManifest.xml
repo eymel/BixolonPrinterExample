@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.essen.bixolonprinter"
+    android:versionCode="1"
+    android:versionName="1.1.2" >
+
+    <uses-sdk android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+
+
+    <activity android:name="com.essen.bixolonprinter.MainActivity" android:label="@string/app_name" android:configChanges="orientation|screenSize">
+
+
+    <intent-filter>
+
+    <action android:name="android.intent.action.MAIN"/>
+
+    <category android:name="android.intent.category.LAUNCHER"/>
+
+    <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+
+</intent-filter>
+
+    <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/device_filter"/>
+
+</activity>
+
+    <activity android:name="com.essen.bixolonprinter.DrawTextActivity" android:label="@string/title_activity_draw_text"> </activity>
+
+    <activity android:name="com.essen.bixolonprinter.DrawVectorTextActivity" android:label="@string/title_activity_draw_vector_text"> </activity>
+
+    <activity android:name="com.essen.bixolonprinter.Draw1dBarcodeActivity" android:label="@string/title_activity_draw1d_barcode"> </activity>
+
+    <activity android:name="com.essen.bixolonprinter.DrawPdf417Activity" android:label="@string/title_activity_draw_pdf417"> </activity>
+
+    <activity android:name="com.essen.bixolonprinter.DrawQrCodeActivity" android:label="@string/title_activity_draw_qr_code"> </activity>
+
+    <activity android:name="com.essen.bixolonprinter.DrawMaxicodeActivity" android:label="@string/title_activity_draw_maxicode"> </activity>
+
+    <activity android:name="com.essen.bixolonprinter.DrawDataMatrixActivity" android:label="@string/title_activity_draw_data_matrix"> </activity>
+
+    <activity android:name="com.essen.bixolonprinter.DrawBlockActivity" android:label="@string/title_activity_draw_block"> </activity>
+
+    <activity android:name="com.essen.bixolonprinter.DrawCircleActivity" android:label="@string/title_activity_draw_circle"> </activity>
+
+    <activity android:name="com.essen.bixolonprinter.CharacterSetSelectionActivity" android:label="@string/title_activity_character_set_selection"> </activity>
+
+    <activity android:name="com.essen.bixolonprinter.DrawBitmapActivity" android:label="@string/title_activity_draw_bitmap"> </activity>
+
+    <activity android:name="com.essen.bixolonprinter.DirectIoActivity" android:label="@string/title_activity_direct_io"> </activity>
+
+    <activity android:name="com.essen.bixolonprinter.DrawPDFActivity" android:label="@string/title_activity_draw_pdf"> </activity>
+    </application>
+
+</manifest>
